@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Portfolio</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="top text-blue-800 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-6">
+        <div class="flex-auto justify-between items-center pt-2 px-2 py-3 sm:p-0">
+            <div class="mb-8">
+                <h1 class="text-5xl text-left h-8 px-2 pb-8">Shelley Cincotta</h1>
+            </div>
+            <div class="sm:hidden">
+                <button type="button" id="mybutton" class="block text-gray-200">
+                    <svg class="fill current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" /></svg>
+                </button>
+            </div>
+        </div>
+        <nav :class="isOpen ? 'block' : 'hidden'" id="mymenu" class="hidden sm:block">
+            <div class="px-8 pt-2 pb-8 sm:flex sm:p-0">
+                <a href="#Writing" class='block mt-1 px-4 py-1 text-xl font-semibold hover:bg-gray-500 rounded sm:mt-0 sm:ml-2'>Writing</a>
+                <a href="#Narration" class='block mt-1 px-4 py-1 text-xl font-semibold hover:bg-gray-600 rounded sm:mt-0 sm:ml-2'>Narration</a>
+                <a href="#About" class='block mt-1 px-4 py-1 pr-20 text-xl font-semibold hover:bg-gray-600 rounded sm:mt-0 sm:ml-2'>About</a>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!--<img src="images/beach.JPG" alt="" class=".bg-cover"> -->
+    <p id="about" class="text-3xl sm:text-4xl">
+        Technical Writing, Requirements Gathering, Engineering
+    </p>
+    <hr>
+    <div id="maincontent">
+        <div class="sample p-16 w-auto sm:w-1/4">
+            <a href="writing samples/Secured configuration.pdf" alt="Writing sample for internal developers">Developers Guide</a>
+        </div>
+        <div class="sample p-16 w-auto sm:w-1/4">
+            <a href="writing samples/Sample API Guidelines.pdf" alt="Writing sample for internal developers">API Guidelines</a>
+        </div>
+        <div class="sample p-16 w-auto sm:w-1/4">
+            <a href="writing samples/Sample Call Flow Spec.pdf" alt="Writing sample for internal developers">Call Flow Specification</a>
+        </div>
+        <div class="sample p-16 w-auto sm:w-1/4">
+            <a href="voice samples/savingwinslow_linkcast01.mp4" alt="Saving Winslow">Saving Winslow</a>
+        </div>
+        <div class="sample p-16 w-auto sm:w-1/4">
+            <a href="voice samples/rebeccaofsunnybrookfarm_trailer01.mp4" alt="Rebecca of Sunnybrook Farm">Rebecca of Sunnybrook Farms</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="ml-16">
+            <span>
+                Connect with me on
+                <a href="https://www.linkedin.com/in/shelley-cincotta/">LinkedIn</a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
