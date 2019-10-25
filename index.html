@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="typed.js"></script>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/9ec4d4d1fc.js" crossorigin="anonymous"></script>
+
     <title>Portfolio</title>
     <style>
 
@@ -15,7 +19,7 @@
 </head>
 
 <body>
-    <header class="top text-blue-800 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-6">
+    <header class="top sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-6">
         <div class="flex-auto justify-between items-center pt-2 px-2 py-3 sm:p-0">
             <div class="mb-8">
                 <h1 class="text-5xl text-left h-8 px-2 pb-8">Shelley Cincotta</h1>
@@ -36,26 +40,45 @@
         </nav>
         </div>
     </header>
-    <!--Add comments -->
-    <p id="about" class="text-3xl sm:text-4xl">
-        Technical Writing, Requirements Gathering, Engineering
-    </p>
+    <!--Add comments class="text-3xl sm:text-4xl" -->
+    <div id="liveTyping">
+        <div id="about" >
+            <p id="my">Technical Writing, Requirements Gathering, Engineering</p>
+        </div>
+        <span id="typed"></span>
+    </div>
     <hr>
+
     <div id="maincontent">
-        <div class="sample p-16 w-auto sm:w-1/4">
-            <a href="writing samples/Secured configuration.pdf" alt="Writing sample for internal developers">Developers Guide</a>
+        <div id="writing1" class="sample p-8 w-auto sm:w-1/4">
+            <a href="writing samples/Secured configuration.pdf" alt="Writing sample for internal developers">developer's guide</a>
+            <p>
+                Secure configuration instructions for an internal development team
+                <i class="myIcon fas fa-file-signature"></i>
+            </p>
         </div>
-        <div class="sample p-16 w-auto sm:w-1/4">
-            <a href="writing samples/Sample API Guidelines.pdf" alt="Writing sample for internal developers">API Guidelines</a>
+        
+        <div id="writing2" class="sample p-8 w-auto sm:w-1/4">
+            <a href="writing samples/Sample API Guidelines.pdf" alt="Writing sample for external developers">api guidelines</a>
+            <p>
+                Instructions for external API users
+                <i class="myIcon fas fa-code"></i>
+            </p>
         </div>
-        <div class="sample p-16 w-auto sm:w-1/4">
-            <a href="writing samples/Sample Call Flow Spec.pdf" alt="Writing sample for internal developers">Call Flow Specification</a>
+        <div id="writing3" class="sample p-8 w-auto sm:w-1/4">
+            <a href="writing samples/Sample Call Flow Spec.pdf" alt="Writing sample for vendors">call flow specification</a>
+            <p>
+                Sample call flow definition for application development and external vendors
+                <i class="myIcon fas fa-project-diagram"></i>
+            </p>
         </div>
-        <div class="sample p-16 w-auto sm:w-1/4">
+        <div class="sample p-8 w-auto sm:w-1/4">
             <a href="voice samples/savingwinslow_linkcast01.mp4" alt="Saving Winslow">Saving Winslow</a>
+            <i class="myIcon fas fa-headphones"></i>
         </div>
-        <div class="sample p-16 w-auto sm:w-1/4">
+        <div class="sample p-8 w-auto sm:w-1/4">
             <a href="voice samples/rebeccaofsunnybrookfarm_trailer01.mp4" alt="Rebecca of Sunnybrook Farm">Rebecca of Sunnybrook Farms</a>
+            <i class="myIcon fas fa-headphones"></i>
         </div>
     </div>
 
@@ -63,7 +86,6 @@
     <footer>
         <div class="ml-16">
             <span>
-                Connect with me on
                 <a href="https://www.linkedin.com/in/shelley-cincotta/">LinkedIn</a>
             </span>
         </div>
