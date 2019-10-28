@@ -9,7 +9,7 @@ body {
     background: url(../images/gray.jpg) #2c5282;
     background-size: contain; */
     max-height: fit-content;
-    color: whitesmoke;
+    color: rgb(60, 126, 170);
 }
 
 .top {
@@ -18,13 +18,13 @@ body {
     /* font-size: 3rem; */
     font-weight: 200;
     /* text-center text-5xl text-bold px-2 pb-8 */
+    color: whitesmoke;
 }
 
 #liveTyping {
     padding: 2rem;
     font-size: 1.875rem;
-    text-align: center;
-    color: rgb(60, 126, 170);
+    text-align: center;    
 }
 
 #maincontent {
@@ -43,11 +43,12 @@ body {
     font-size: 2rem;
     font-variant: small-caps;
     flex: 1 1 auto;
-    background: rgb(60, 126, 170);
+    background-color: whitesmoke;  
     background-size: contain;
     margin: 2rem;
+    padding-top: 1rem;
+    padding: 1rem 1rem 1rem 0rem;
     max-width: 100%;
-    border-radius: .5rem;
     border-style: solid;
     border-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -58,28 +59,34 @@ body {
     font-variant: normal;
     font-size: 1.25rem;
     margin: 1rem;
-    color: rgb(21, 38, 71);
+    color: rgb(42, 71, 85);
 }
 
 .sample:hover {
-    color: rgb(21, 38, 71);
-    background-color: whitesmoke;  
+    color: whitesmoke;
+    background: rgb(60, 126, 170);
 }
 
+/*  rgb(158, 114, 158) 
 #sample2 {
-    background-color: rgb(158, 114, 158);
+    background-color: white;
+    color: rgb(60, 126, 170);
 }
+
 
 #sample2:hover {
     background-color: whitesmoke; 
 }
+*/
 
 .myIcon {
-    padding-left:2rem;
+    display: inline;
+    padding-left:1rem;
+    color: rgb(104, 169, 212);
 }
 
 footer {
     text-align: center;
     font-size: 1.25rem;
-    text-decoration:underline;
+    color: rgb(60, 126, 170);
 }
