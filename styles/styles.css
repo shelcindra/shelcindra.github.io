@@ -88,5 +88,12 @@ body {
 footer {
     text-align: center;
     font-size: 1.25rem;
-    color: rgb(60, 126, 170);
+    margin: 1rem;
+}
+
+#linked {
+    color: white;
+    background-color: rgb(104, 169, 212);
+    margin: .25rem;
+    padding: .25rem;
 }
