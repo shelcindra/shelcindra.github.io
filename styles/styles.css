@@ -19,6 +19,7 @@ body {
     font-weight: 200;
     /* text-center text-5xl text-bold px-2 pb-8 */
     color: whitesmoke;
+    padding-left: 2rem;
 }
 
 #liveTyping {
@@ -36,7 +37,6 @@ body {
     justify-content: space-between; */
 }
 
-
 /* background: url(../images/blue.jpg) #2c5282; min-height: 50px;
     min-width: 50px; */
 .sample {
@@ -47,7 +47,7 @@ body {
     background-size: contain;
     margin: 2rem;
     padding-top: 1rem;
-    padding: 1rem 1rem 1rem 0rem;
+    padding: 1.5rem 1rem 1rem 1.5rem;
     max-width: 100%;
     border-style: solid;
     border-color: white;
@@ -67,12 +67,14 @@ body {
     background: rgb(60, 126, 170);
 }
 
+#lastbox {
+    flex-grow: 0;
+}
 /*  rgb(158, 114, 158) 
 #sample2 {
     background-color: white;
     color: rgb(60, 126, 170);
 }
-
 
 #sample2:hover {
     background-color: whitesmoke; 
